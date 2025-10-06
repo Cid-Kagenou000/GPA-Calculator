@@ -1,19 +1,20 @@
-#title {
+#Title {
     text-align: center;
     font-family: "IBM Plex Mono";
     font-size: 64px;
 }
-#hero {
+#Hero {
     font-family: "IBM Plex Mono", monospace;
     text-align: center;
-    margin-top: 40px;
+    margin-inline: 50px;
+    
 }
 
-#hero p {
+#Hero p {
     font-size: 24px;
 }
 
-#hero button {
+#Hero button {
     background-color: #ADADAD;
     border: none;
     border-radius: 15px;
@@ -23,28 +24,37 @@
     margin-bottom: 20px;
 }
 
-#hero button:hover {
+#Hero button:hover {
     background-color: #999;
 }
 
-#table {
+#Separator{
+    display: flex;
+    align-items: center;      /* vertically centers them */
+    justify-content: center;  /* centers both items horizontally */
+    gap: 20px;
+    line-gap-override: auto;
+}
+
+#Table {
     border-collapse: collapse;
     margin: 0 auto;
     width: 90%;
     max-width: 800px;
-    background-color: #f9f9f9;
     border-radius: 8px;
     overflow: hidden;
-
+    border-spacing: 15px;
+    border-collapse: separate;
+    border-spacing: 10 10px;
 }
 
 #P1,#P2,#P3 {
     background-color: #ADADAD;
     font-weight: 600;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
-#table input {
+#Table input {
     border: none;
     text-align: center;
     font-family: "IBM Plex Mono", monospace;
@@ -52,20 +62,29 @@
     width: 100%;
     background-color: transparent;
     outline: none;
-
 }
 
-#table input[type="number"]::-webkit-inner-spin-button,
-#table input[type="number"]::-webkit-outer-spin-button {
+#Table input[type="number"]::-webkit-inner-spin-button,
+#Table input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
-  margin: 0;
+    margin: 0;
 }
 
-input:invalid {
-  border: 1px solid red;
+.Input{
+    background-color: #F2F2F2;
 }
 
-#table {
-  border-collapse: separate;
-  border-spacing: 0 10px; /* horizontal=0, vertical=10px */
+#Footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #961113;
+    color: white;
+    text-align: center;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 18px;
+    padding: 8px;
+    letter-spacing: 1px;
+
 }
