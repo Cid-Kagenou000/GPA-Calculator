@@ -29,11 +29,11 @@
             <button>Hide</button>
         </div>
 
-        <div>
-            <table id = "Table">
+        <div id = "Hide">
+            <table class = "Table">
                 <tbody>
                     <tr>
-                        <td id = "P1">P1</td>
+                        <td class = "P1">P1</td>
                         <td class="Input"><input type="number" min="0" max="100" placeholder="0" step="0.01" oninput="if(this.value > 100) this.value = 100;"></td>
                         <td class="Input"><input type="number" min="0" max="100" placeholder="0" step="0.01" oninput="if(this.value > 100) this.value = 100;"></td>
                         <td class="Input"><input type="number" min="0" max="100" placeholder="0" step="0.01" oninput="if(this.value > 100) this.value = 100;"></td>
@@ -47,7 +47,7 @@
                         <td id = "OutP3" class = "Result">Result</td>
                     </tr>
                     <tr>
-                        <td id = "P2">P2</td>
+                        <td class = "P2">P2</td>
                         <td class="Input"><input type="number" min="0" max="100" placeholder="0" step="0.01" oninput="if(this.value > 100) this.value = 100;"></td>
                         <td class="Input"><input type="number" min="0" max="100" placeholder="0" step="0.01" oninput="if(this.value > 100) this.value = 100;"></td>
                         <td class="Input"><input type="number" min="0" max="100" placeholder="0" step="0.01" oninput="if(this.value > 100) this.value = 100;"></td>
@@ -61,7 +61,7 @@
                         <td id = "OutP2" class = "Result">Result</td>
                     </tr>
                     <tr>
-                        <td id = "P3">P3</td>
+                        <td class = "P3">P3</td>
                         <td class="Input"><input type="number" min="0" max="100" placeholder="0" step="0.01" oninput="if(this.value > 100) this.value = 100;"></td>
                         <td class="Input"><input type="number" min="0" max="100" placeholder="0" step="0.01" oninput="if(this.value > 100) this.value = 100;"></td>
                         <td class="Input"><input type="number" min="0" max="100" placeholder="0" step="0.01" oninput="if(this.value > 100) this.value = 100;"></td>
@@ -84,28 +84,29 @@
             <button>Hide</button>
         </div>
 
-        <div>
-            <table id = "Table">
+        <div id = "Hidev2">
+            <table class = "Table">
                 <tbody>
                     <tr>
-                        <td id = "P1">P1</td>
-                        <td id = "OutP3" class = "Result"><input placeholder="0"></td>
+                        <td class = "P1">P1</td>
+                        <td id = "OutP1v2" class = "Inputv2"><input type="number" min="0" max="100" placeholder="0" step="0.01" oninput="if(this.value > 100) this.value = 100;"></td>
                     </tr>
                     <tr>
-                        <td id = "P2">P2</td>
-                        <td id = "OutP2" class = "Result"><input placeholder="0"></td>
+                        <td class = "P2">P2</td>
+                        <td id = "OutP2v2" class = "Inputv2"><input type="number" min="0" max="100" placeholder="0" step="0.01" oninput="if(this.value > 100) this.value = 100;"></td>
                     </tr>
                     <tr>
-                        <td id = "P3">P3</td>
-                        <td id = "OutP3" class = "Result"><input placeholder="0"></td>
+                        <td class = "P3">P3</td>
+                        <td id = "OutP3v2" class = "Inputv2"><input type="number" min="0" max="100" placeholder="0" step="0.01" oninput="if(this.value > 100) this.value = 100;"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <div id = "OutputBottom">
-            <p>Your GPA is <span class = "FinalOutput">0.00</span> or <span class = "FinalOutput">0.00</span></p>
-            <button>Calculate</button>
+        <div>
+            <p id = "OutputBottom">Your GPA is <span id = "SemAv" class = "FinalOutput">0.00</span> or <span id = "SemPoint" class = "FinalOutput">0.00</span></p>
+            <br>
+            <button onclick="calculate()">Calculate</button>
         </div>
 
     </div>

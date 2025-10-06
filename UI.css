@@ -1,5 +1,6 @@
 body {
     padding-bottom: 60px;
+    background-color: #ffffff;
 }
 
 #Title {
@@ -7,12 +8,13 @@ body {
     font-family: "IBM Plex Mono";
     font-size: 64px;
 }
+
 #Hero {
     font-family: "IBM Plex Mono", monospace;
     text-align: center;
     margin-inline: 250px;
-    font-size: 24px;
-    
+    font-size: 24px; 
+
 }
 
 #Hero p {
@@ -40,66 +42,96 @@ body {
     gap: 30px;
 }
 
-hr {
-  border: none;
-  height: 2px;
-  background-color: #ADADAD;
-  width: 80%;
-  margin: 20px auto;
+##Hide{
+    background-color: #000000;
+    justify-items: center;
+    justify-content: center;
+    display: inline-block;
 }
 
-#Table {
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ADADAD;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.Table {
     border-collapse: collapse;
     margin: 0 auto;
     width: 90%;
     max-width: 800px;
-    border-radius: 8px;
     overflow: hidden;
-    border-spacing: 15px;
     border-collapse: separate;
-    border-spacing: 10 10px;
+    border-spacing: 30px 20px;
 }
 
-#P1,#P2,#P3 {
+.P1,.P2,.P3 {
+    display: inline-block;
     background-color: #ADADAD;
     font-weight: 300;
-    border-radius: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
+    border-radius: 10px;
+    padding: 0px 15px;
+    margin-right: 50px;
 }
 
-#Table input {
+.Table input {
+    background-color: #000000;
     border: none;
     text-align: center;
     font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
-    width: 100%;
+    width: auto;
     background-color: transparent;
     outline: none;
+    padding: 0px 10px;
 }
 
-#Table input[type="number"]::-webkit-inner-spin-button,
-#Table input[type="number"]::-webkit-outer-spin-button {
+.Table input[type="number"]::-webkit-inner-spin-button,
+.Table input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
-    margin: 0;
+    margin: 0px;
 }
 
 .Input{
     background-color: #F2F2F2;
-    border-radius: 8px;
-    padding-left: 5px;
-    padding-right: 5px;
+    border-radius: 10px;
 }
 
 .Result{
+    background-color: #ADADAD;
+    border-radius: 10px;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.Inputv2{
+    display: inline-block;
     background-color: #F2F2F2;
-    border-radius: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    margin-left: 50px;
 }
 
 #OutputBottom{
+    display: inline-block;
     margin-top: 50px;
+    margin-bottom: 25px;
+    background-color: #F2F2F2;
+    box-shadow: #000000;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 8px 15px;
+}
+
+.FinalOutput{
+    display: inline-block;
+    background-color: #D9D9D9;
+    padding: 0px 10px;
+    border-radius: 8px;
 }
 
 #Footer {
