@@ -7,11 +7,12 @@
     font-family: "IBM Plex Mono", monospace;
     text-align: center;
     margin-inline: 50px;
+    font-size: 24px;
     
 }
 
 #Hero p {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 #Hero button {
@@ -32,7 +33,7 @@
     display: flex;
     align-items: center;      /* vertically centers them */
     justify-content: center;  /* centers both items horizontally */
-    gap: 20px;
+    gap: 30px;
     line-gap-override: auto;
 }
 
@@ -50,8 +51,10 @@
 
 #P1,#P2,#P3 {
     background-color: #ADADAD;
-    font-weight: 600;
+    font-weight: 300;
     border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #Table input {
@@ -72,6 +75,16 @@
 
 .Input{
     background-color: #F2F2F2;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.Result{
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #Footer {
@@ -86,5 +99,4 @@
     font-size: 18px;
     padding: 8px;
     letter-spacing: 1px;
-
 }
