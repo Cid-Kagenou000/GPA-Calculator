@@ -78,7 +78,7 @@ hr {
     margin-right: 50px;
 }
 
-.Table input {
+.Table,.Tablev2 input {
     background-color: #000000;
     border: none;
     text-align: center;
@@ -92,8 +92,13 @@ hr {
 
 .Table input[type="number"]::-webkit-inner-spin-button,
 .Table input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
+    -webkit-appearance: none;
     margin: 0px;
+}
+
+.Table input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .Input{
