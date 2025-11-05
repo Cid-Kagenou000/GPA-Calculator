@@ -78,7 +78,7 @@ hr {
     margin-right: 50px;
 }
 
-.Table,.Tablev2 input {
+.Table,Tablev2 input {
     background-color: #000000;
     border: none;
     text-align: center;
